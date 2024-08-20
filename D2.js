@@ -160,8 +160,7 @@ console.log(me); */
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-
-/* const me = {
+const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
@@ -170,8 +169,9 @@ me.city = "toronto";
 
 me.auto = ["ferrari", "mazda", "fiat"];
 delete me.lastName;
-me[2].skills.pop();
-console.log(me); */
+me.skills.pop();
+console.log(me);
+/* */
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
@@ -204,6 +204,6 @@ numeri.push(7);
 numeri.push(8);
 numeri.push(9);
 numeri.push(10);
-numeri.splice(9, 0, 100);
+numeri.splice(9, 1, 100);
 console.log(numeri);
 /* SCRIVI QUI LA TUA RISPOSTA */
